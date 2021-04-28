@@ -1,0 +1,18 @@
+﻿<Window x:Class="T10_FaceTracking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T10_FaceTracking"
+        mc:Ignorable="d"
+        Title="Face Tracking" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Image x:Name="colorImg" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Image x:Name="skeletonImg" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock Height="36" HorizontalAlignment="Left" Margin="12,12,0,0" Name="beamAngleTxt" Text="Beam Angle: " VerticalAlignment="Top" Width="642" FontSize="20" />
+        <TextBlock Height="34" HorizontalAlignment="Left" Margin="12,43,0,0" x:Name="beamAngleConfidenceTxt" Text="Beam Angle Confidence: " VerticalAlignment="Top" Width="642" FontSize="20" />
+        <TextBlock FontSize="20" Height="33" HorizontalAlignment="Left" Margin="12,73,0,0" Name="recognizedCommand" Text="Recognized Command: " VerticalAlignment="Top" Width="642" />
+        <TextBlock Height="62" HorizontalAlignment="Left" Margin="12,0,0,0" x:Name="supportedCommands" VerticalAlignment="Bottom" Width="757" FontSize="14" ><Run Text="Supported commands: "/><LineBreak/><Run Text="- Clear the background; - Reset the joints"/><LineBreak/><Run Text="- Change background to [colorName]; - Set [jointType] to [colorName]"/></TextBlock>
+        <TextBlock x:Name="recognitionResult" HorizontalAlignment="Right" Margin="0,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="22" Width="386"/>
+    </Grid>
+</Window>
