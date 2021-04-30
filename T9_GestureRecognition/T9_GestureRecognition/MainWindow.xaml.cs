@@ -51,7 +51,7 @@ namespace T9_GestureRecognition
 
             // Create a gesture database using the pre-trained ones with VGB
             // @ to allow \ in the name 
-            vgbDb = new VisualGestureBuilderDatabase(@".\Gestures\fly.gbd");
+            vgbDb = new VisualGestureBuilderDatabase(@".\Gestures\Three.gbd");
 
             vgbFrameSource.AddGestures(vgbDb.AvailableGestures);
 
@@ -107,10 +107,10 @@ namespace T9_GestureRecognition
 
                             // class exercise 
 
-                            // else if (gesture.Name.Equals("Flyprocessing"))
-                            //    brush = Brushes.Green;
-                            // else if (gesture.Name.Equals("OneHandUp"))
-                            // brush = Brushes.Purple;
+                             if (gesture.Name.Equals("directionright"))
+                               brush = Brushes.Green;
+                             else if (gesture.Name.Equals("direction"))
+                             brush = Brushes.Purple;
                         }
                     }
                     if ( r6 &&  r8 )
