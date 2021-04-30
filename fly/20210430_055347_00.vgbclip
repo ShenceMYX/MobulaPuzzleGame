@@ -1,0 +1,1618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GestureBuilderFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ClipFile>
+		<Header>
+			<Date>2021-04-30</Date>
+			<Time>15:42:31.4755028+08:00</Time>
+			<Version>1</Version>
+			<Type>XefClip</Type>
+			<Clip>20210430_055347_00.xef</Clip>
+			<StartFrame>232</StartFrame>
+			<EndFrame>758</EndFrame>
+			<ID>f87ddc6c-05b8-4b90-8d28-91ed983912a9</ID>
+		</Header>
+		<UI_State>
+			<CurrentFrameStart>719</CurrentFrameStart>
+			<CurrentFrameEnd>720</CurrentFrameEnd>
+			<AttributeInterpolations>
+				<Items>
+					<Description Name="flyProgress" Type="FLOAT" />
+					<Start>277</Start>
+					<End>720</End>
+					<Method>Bezier</Method>
+				</Items>
+			</AttributeInterpolations>
+			<AttributeKeys>
+				<Items Frame="277">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="309">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5003102" />
+				</Items>
+				<Items Frame="345">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="349">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="378">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+				<Items Frame="391">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="416">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+				<Items Frame="431">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="455">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+				<Items Frame="463">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="491">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+				<Items Frame="504">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="532">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+				<Items Frame="540">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="563">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+				<Items Frame="613">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="639">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+				<Items Frame="665">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				</Items>
+				<Items Frame="693">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+				<Items Frame="719">
+					<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				</Items>
+			</AttributeKeys>
+		</UI_State>
+		<AutoTagged />
+		<Attributes>
+			<Items xsi:type="StringAttribute" Name="Name" Value="" />
+			<Items xsi:type="IntAttribute" Name="Age" Value="0" />
+			<Items xsi:type="FloatAttribute" Name="Weight" Value="0" />
+			<Items xsi:type="FloatAttribute" Name="Height" Value="0" />
+			<Items xsi:type="StringAttribute" Name="Handedness" Value="Right" />
+		</Attributes>
+		<ClipAttributes>
+			<Items Frame="277">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+			</Items>
+			<Items Frame="278">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0234444048" />
+			</Items>
+			<Items Frame="279">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0468430072" />
+			</Items>
+			<Items Frame="280">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0701499954" />
+			</Items>
+			<Items Frame="281">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.09331957" />
+			</Items>
+			<Items Frame="282">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.116305932" />
+			</Items>
+			<Items Frame="283">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.139063269" />
+			</Items>
+			<Items Frame="284">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.161545768" />
+			</Items>
+			<Items Frame="285">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.18370764" />
+			</Items>
+			<Items Frame="286">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.205503076" />
+			</Items>
+			<Items Frame="287">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.226886272" />
+			</Items>
+			<Items Frame="288">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.2478114" />
+			</Items>
+			<Items Frame="289">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.2682327" />
+			</Items>
+			<Items Frame="290">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.288104326" />
+			</Items>
+			<Items Frame="291">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3073805" />
+			</Items>
+			<Items Frame="292">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3260154" />
+			</Items>
+			<Items Frame="293">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.343963265" />
+			</Items>
+			<Items Frame="294">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.361178219" />
+			</Items>
+			<Items Frame="295">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3776145" />
+			</Items>
+			<Items Frame="296">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.393226266" />
+			</Items>
+			<Items Frame="297">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.407967776" />
+			</Items>
+			<Items Frame="298">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4217932" />
+			</Items>
+			<Items Frame="299">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.43465668" />
+			</Items>
+			<Items Frame="300">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4465125" />
+			</Items>
+			<Items Frame="301">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4573148" />
+			</Items>
+			<Items Frame="302">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.46701774" />
+			</Items>
+			<Items Frame="303">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4755756" />
+			</Items>
+			<Items Frame="304">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.482942551" />
+			</Items>
+			<Items Frame="305">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.48907274" />
+			</Items>
+			<Items Frame="306">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.493920416" />
+			</Items>
+			<Items Frame="307">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.497439742" />
+			</Items>
+			<Items Frame="308">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.499584943" />
+			</Items>
+			<Items Frame="309">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5003102" />
+			</Items>
+			<Items Frame="310">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4995113" />
+			</Items>
+			<Items Frame="311">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4971618" />
+			</Items>
+			<Items Frame="312">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.493332475" />
+			</Items>
+			<Items Frame="313">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4880941" />
+			</Items>
+			<Items Frame="314">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.481517464" />
+			</Items>
+			<Items Frame="315">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.473673284" />
+			</Items>
+			<Items Frame="316">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.464632422" />
+			</Items>
+			<Items Frame="317">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.454465568" />
+			</Items>
+			<Items Frame="318">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.443243563" />
+			</Items>
+			<Items Frame="319">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.431037128" />
+			</Items>
+			<Items Frame="320">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.417917073" />
+			</Items>
+			<Items Frame="321">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.403954148" />
+			</Items>
+			<Items Frame="322">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.389219135" />
+			</Items>
+			<Items Frame="323">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.373782843" />
+			</Items>
+			<Items Frame="324">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.357716" />
+			</Items>
+			<Items Frame="325">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3410894" />
+			</Items>
+			<Items Frame="326">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3239738" />
+			</Items>
+			<Items Frame="327">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.30644" />
+			</Items>
+			<Items Frame="328">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.288558751" />
+			</Items>
+			<Items Frame="329">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.270400852" />
+			</Items>
+			<Items Frame="330">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.252037048" />
+			</Items>
+			<Items Frame="331">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.233538136" />
+			</Items>
+			<Items Frame="332">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.21497488" />
+			</Items>
+			<Items Frame="333">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.196418077" />
+			</Items>
+			<Items Frame="334">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.177938461" />
+			</Items>
+			<Items Frame="335">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.159606844" />
+			</Items>
+			<Items Frame="336">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.141493976" />
+			</Items>
+			<Items Frame="337">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.123670638" />
+			</Items>
+			<Items Frame="338">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.106207609" />
+			</Items>
+			<Items Frame="339">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.08917566" />
+			</Items>
+			<Items Frame="340">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.07264556" />
+			</Items>
+			<Items Frame="341">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0566880964" />
+			</Items>
+			<Items Frame="342">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.04137403" />
+			</Items>
+			<Items Frame="343">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0267741438" />
+			</Items>
+			<Items Frame="344">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0129592093" />
+			</Items>
+			<Items Frame="345">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+			</Items>
+			<Items Frame="346">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="-0.0127174305" />
+			</Items>
+			<Items Frame="347">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="-0.0214053933" />
+			</Items>
+			<Items Frame="348">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="-0.01939066" />
+			</Items>
+			<Items Frame="349">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="350">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0317343771" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="351">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.06614756" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="352">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.102963708" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="353">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.141906992" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="354">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.182701588" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="355">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.225071654" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="356">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.268741369" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="357">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3134349" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="358">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3588764" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="359">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.404790044" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="360">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4509" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="361">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.49693042" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="362">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5426055" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="363">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5876494" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="364">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6317863" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="365">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6747404" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="366">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7162357" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="367">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7559966" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="368">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.793747067" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="369">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.829211354" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="370">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8621137" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="371">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8921782" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="372">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.919128954" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="373">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.942690253" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="374">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9625862" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="375">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.978541" />
+			</Items>
+			<Items Frame="376">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9902788" />
+			</Items>
+			<Items Frame="377">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9975237" />
+			</Items>
+			<Items Frame="378">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+			</Items>
+			<Items Frame="379">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9831588" />
+			</Items>
+			<Items Frame="380">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.936276734" />
+			</Items>
+			<Items Frame="381">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.864815652" />
+			</Items>
+			<Items Frame="382">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7742376" />
+			</Items>
+			<Items Frame="383">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.670004547" />
+			</Items>
+			<Items Frame="384">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5575785" />
+			</Items>
+			<Items Frame="385">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4424215" />
+			</Items>
+			<Items Frame="386">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.329995453" />
+			</Items>
+			<Items Frame="387">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.2257624" />
+			</Items>
+			<Items Frame="388">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.135184348" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="389">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.06372326" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="390">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0168411471" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="391">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="392">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.004672" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="393">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.018176" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="394">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.039744" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="395">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.068608" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="396">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.104" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="397">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.145152" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="398">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.191296" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="399">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.241664" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="400">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.295488" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="401">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.352" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="402">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.410432" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="403">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.470016" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="404">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.529984" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="405">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.589568" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="406">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.648" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="407">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.704512" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="408">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.758336" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="409">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.808704" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="410">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.854848" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="411">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.896" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="412">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.931392" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="413">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.960256" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="414">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.981824" />
+			</Items>
+			<Items Frame="415">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.995328" />
+			</Items>
+			<Items Frame="416">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+			</Items>
+			<Items Frame="417">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.987259269" />
+			</Items>
+			<Items Frame="418">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.951407433" />
+			</Items>
+			<Items Frame="419">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.896" />
+			</Items>
+			<Items Frame="420">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8245926" />
+			</Items>
+			<Items Frame="421">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7407407" />
+			</Items>
+			<Items Frame="422">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.648" />
+			</Items>
+			<Items Frame="423">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5499259" />
+			</Items>
+			<Items Frame="424">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.450074077" />
+			</Items>
+			<Items Frame="425">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.352" />
+			</Items>
+			<Items Frame="426">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.259259254" />
+			</Items>
+			<Items Frame="427">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.17540741" />
+			</Items>
+			<Items Frame="428">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.104" />
+			</Items>
+			<Items Frame="429">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0485925935" />
+			</Items>
+			<Items Frame="430">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0127407406" />
+			</Items>
+			<Items Frame="431">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="432">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.005063657" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="433">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0196759254" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="434">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.04296875" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="435">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0740740746" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="436">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.11212384" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="437">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.15625" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="438">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.2055845" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="439">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.259259254" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="440">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.31640625" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="441">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3761574" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="442">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4376447" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="443">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="444">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.56235534" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="445">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6238426" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="446">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.68359375" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="447">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7407407" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="448">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.794415534" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="449">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.84375" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="450">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.887876153" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="451">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9259259" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="452">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.95703125" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="453">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9803241" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="454">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.994936347" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="455">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="456">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.95703125" />
+			</Items>
+			<Items Frame="457">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.84375" />
+			</Items>
+			<Items Frame="458">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.68359375" />
+			</Items>
+			<Items Frame="459">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5" />
+			</Items>
+			<Items Frame="460">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.31640625" />
+			</Items>
+			<Items Frame="461">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.15625" />
+			</Items>
+			<Items Frame="462">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.04296875" />
+			</Items>
+			<Items Frame="463">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+			</Items>
+			<Items Frame="464">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.00373542286" />
+			</Items>
+			<Items Frame="465">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0145772593" />
+			</Items>
+			<Items Frame="466">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0319788642" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="467">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0553935878" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="468">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0842747837" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="469">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.1180758" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="470">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.15625" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="471">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.198250726" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="472">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.243531346" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="473">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.291545182" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="474">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.341745615" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="475">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.393586" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="476">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.446519673" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="477">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="478">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5534803" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="479">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.606414" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="480">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6582544" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="481">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7084548" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="482">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.756468654" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="483">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8017493" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="484">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.84375" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="485">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8819242" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="486">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.915725231" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="487">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9446064" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="488">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.968021154" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="489">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.98542273" />
+			</Items>
+			<Items Frame="490">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9962646" />
+			</Items>
+			<Items Frame="491">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+			</Items>
+			<Items Frame="492">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9831588" />
+			</Items>
+			<Items Frame="493">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.936276734" />
+			</Items>
+			<Items Frame="494">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.864815652" />
+			</Items>
+			<Items Frame="495">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7742376" />
+			</Items>
+			<Items Frame="496">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.670004547" />
+			</Items>
+			<Items Frame="497">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5575785" />
+			</Items>
+			<Items Frame="498">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4424215" />
+			</Items>
+			<Items Frame="499">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.329995453" />
+			</Items>
+			<Items Frame="500">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.2257624" />
+			</Items>
+			<Items Frame="501">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.135184348" />
+			</Items>
+			<Items Frame="502">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.06372326" />
+			</Items>
+			<Items Frame="503">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0168411471" />
+			</Items>
+			<Items Frame="504">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+			</Items>
+			<Items Frame="505">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.00373542286" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="506">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0145772593" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="507">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0319788642" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="508">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0553935878" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="509">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0842747837" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="510">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.1180758" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="511">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.15625" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="512">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.198250726" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="513">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.243531346" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="514">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.291545182" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="515">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.341745615" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="516">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.393586" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="517">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.446519673" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="518">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="519">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5534803" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="520">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.606414" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="521">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6582544" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="522">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7084548" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="523">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.756468654" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="524">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8017493" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="525">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.84375" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="526">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8819242" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="527">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.915725231" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="528">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9446064" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="529">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.968021154" />
+			</Items>
+			<Items Frame="530">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.98542273" />
+			</Items>
+			<Items Frame="531">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9962646" />
+			</Items>
+			<Items Frame="532">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+			</Items>
+			<Items Frame="533">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.95703125" />
+			</Items>
+			<Items Frame="534">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.84375" />
+			</Items>
+			<Items Frame="535">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.68359375" />
+			</Items>
+			<Items Frame="536">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5" />
+			</Items>
+			<Items Frame="537">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.31640625" />
+			</Items>
+			<Items Frame="538">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.15625" />
+			</Items>
+			<Items Frame="539">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.04296875" />
+			</Items>
+			<Items Frame="540">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="541">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.00550669851" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="542">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0213692784" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="543">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0466014631" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="544">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.08021698" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="545">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.121229552" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="546">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.1686529" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="547">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.221500784" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="548">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.278786868" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="549">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.339524955" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="550">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4027287" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="551">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.467411846" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="552">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5325881" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="553">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5972713" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="554">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6604751" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="555">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7212131" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="556">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.778499246" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="557">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8313471" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="558">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8787705" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="559">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.919783" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="560">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9533985" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="561">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9786307" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="562">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9944933" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="563">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="564">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.998816" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="565">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.995328" />
+			</Items>
+			<Items Frame="566">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.989632" />
+			</Items>
+			<Items Frame="567">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.981824" />
+			</Items>
+			<Items Frame="568">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.972" />
+			</Items>
+			<Items Frame="569">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.960256" />
+			</Items>
+			<Items Frame="570">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.946688" />
+			</Items>
+			<Items Frame="571">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.931392" />
+			</Items>
+			<Items Frame="572">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.914464" />
+			</Items>
+			<Items Frame="573">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.896" />
+			</Items>
+			<Items Frame="574">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.876096" />
+			</Items>
+			<Items Frame="575">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.854848" />
+			</Items>
+			<Items Frame="576">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.832352" />
+			</Items>
+			<Items Frame="577">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.808704" />
+			</Items>
+			<Items Frame="578">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.784" />
+			</Items>
+			<Items Frame="579">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.758336" />
+			</Items>
+			<Items Frame="580">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.731808" />
+			</Items>
+			<Items Frame="581">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.704512" />
+			</Items>
+			<Items Frame="582">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.676544" />
+			</Items>
+			<Items Frame="583">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.648" />
+			</Items>
+			<Items Frame="584">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.618976" />
+			</Items>
+			<Items Frame="585">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.589568" />
+			</Items>
+			<Items Frame="586">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.559872" />
+			</Items>
+			<Items Frame="587">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.529984" />
+			</Items>
+			<Items Frame="588">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5" />
+			</Items>
+			<Items Frame="589">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.470016" />
+			</Items>
+			<Items Frame="590">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.440128" />
+			</Items>
+			<Items Frame="591">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.410432" />
+			</Items>
+			<Items Frame="592">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.381024" />
+			</Items>
+			<Items Frame="593">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.352" />
+			</Items>
+			<Items Frame="594">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.323456" />
+			</Items>
+			<Items Frame="595">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.295488" />
+			</Items>
+			<Items Frame="596">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.268192" />
+			</Items>
+			<Items Frame="597">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.241664" />
+			</Items>
+			<Items Frame="598">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.216" />
+			</Items>
+			<Items Frame="599">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.191296" />
+			</Items>
+			<Items Frame="600">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.167648" />
+			</Items>
+			<Items Frame="601">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.145152" />
+			</Items>
+			<Items Frame="602">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.123904" />
+			</Items>
+			<Items Frame="603">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.104" />
+			</Items>
+			<Items Frame="604">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.085536" />
+			</Items>
+			<Items Frame="605">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.068608" />
+			</Items>
+			<Items Frame="606">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.053312" />
+			</Items>
+			<Items Frame="607">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.039744" />
+			</Items>
+			<Items Frame="608">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.028" />
+			</Items>
+			<Items Frame="609">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.018176" />
+			</Items>
+			<Items Frame="610">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.010368" />
+			</Items>
+			<Items Frame="611">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.004672" />
+			</Items>
+			<Items Frame="612">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.001184" />
+			</Items>
+			<Items Frame="613">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+			</Items>
+			<Items Frame="614">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.004324078" />
+			</Items>
+			<Items Frame="615">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0168411471" />
+			</Items>
+			<Items Frame="616">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0368684568" />
+			</Items>
+			<Items Frame="617">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.06372326" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="618">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.096722804" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="619">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.135184348" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="620">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.178425118" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="621">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.2257624" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="622">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.276513427" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="623">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.329995453" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="624">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3855257" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="625">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4424215" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="626">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="627">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5575785" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="628">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6144743" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="629">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.670004547" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="630">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7234866" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="631">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7742376" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="632">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.821574867" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="633">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.864815652" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="634">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9032772" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="635">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.936276734" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="636">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.963131547" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="637">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9831588" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="638">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9956759" />
+			</Items>
+			<Items Frame="639">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+			</Items>
+			<Items Frame="640">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9956759" />
+			</Items>
+			<Items Frame="641">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9831588" />
+			</Items>
+			<Items Frame="642">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.963131547" />
+			</Items>
+			<Items Frame="643">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.936276734" />
+			</Items>
+			<Items Frame="644">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9032772" />
+			</Items>
+			<Items Frame="645">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.864815652" />
+			</Items>
+			<Items Frame="646">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.821574867" />
+			</Items>
+			<Items Frame="647">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7742376" />
+			</Items>
+			<Items Frame="648">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7234866" />
+			</Items>
+			<Items Frame="649">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.670004547" />
+			</Items>
+			<Items Frame="650">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6144743" />
+			</Items>
+			<Items Frame="651">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5575785" />
+			</Items>
+			<Items Frame="652">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5" />
+			</Items>
+			<Items Frame="653">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4424215" />
+			</Items>
+			<Items Frame="654">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.3855257" />
+			</Items>
+			<Items Frame="655">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.329995453" />
+			</Items>
+			<Items Frame="656">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.276513427" />
+			</Items>
+			<Items Frame="657">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.2257624" />
+			</Items>
+			<Items Frame="658">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.178425118" />
+			</Items>
+			<Items Frame="659">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.135184348" />
+			</Items>
+			<Items Frame="660">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.096722804" />
+			</Items>
+			<Items Frame="661">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.06372326" />
+			</Items>
+			<Items Frame="662">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0368684568" />
+			</Items>
+			<Items Frame="663">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0168411471" />
+			</Items>
+			<Items Frame="664">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.004324078" />
+			</Items>
+			<Items Frame="665">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0" />
+			</Items>
+			<Items Frame="666">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.00309766759" />
+			</Items>
+			<Items Frame="667">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0121207209" />
+			</Items>
+			<Items Frame="668">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.0266642366" />
+			</Items>
+			<Items Frame="669">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.046323292" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="670">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.07069296" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="671">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.09936832" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="672">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.131944448" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="673">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.168016419" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="674">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.2071793" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="675">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.249028176" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="676">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.293158144" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="677">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.339164227" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="678">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.386641562" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="679">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4351852" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="680">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.4843902" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="681">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.5338516" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="682">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.583164632" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="683">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.6319242" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="684">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.679725468" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="685">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7261635" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="686">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.7708333" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="687">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.8133301" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="688">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.853248835" />
+				<Items xsi:type="BoolAttribute" Name="fly" Value="true" />
+			</Items>
+			<Items Frame="689">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.890184641" />
+			</Items>
+			<Items Frame="690">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9237326" />
+			</Items>
+			<Items Frame="691">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.953487754" />
+			</Items>
+			<Items Frame="692">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="0.9790452" />
+			</Items>
+			<Items Frame="693">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+			</Items>
+			<Items Frame="694">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.0174638" />
+			</Items>
+			<Items Frame="695">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.03287315" />
+			</Items>
+			<Items Frame="696">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.04631" />
+			</Items>
+			<Items Frame="697">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.05785668" />
+			</Items>
+			<Items Frame="698">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.06759536" />
+			</Items>
+			<Items Frame="699">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.07560813" />
+			</Items>
+			<Items Frame="700">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.08197737" />
+			</Items>
+			<Items Frame="701">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.086785" />
+			</Items>
+			<Items Frame="702">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.0901134" />
+			</Items>
+			<Items Frame="703">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.09204471" />
+			</Items>
+			<Items Frame="704">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.092661" />
+			</Items>
+			<Items Frame="705">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.09204471" />
+			</Items>
+			<Items Frame="706">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.09027779" />
+			</Items>
+			<Items Frame="707">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.08744252" />
+			</Items>
+			<Items Frame="708">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.083621" />
+			</Items>
+			<Items Frame="709">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.07889545" />
+			</Items>
+			<Items Frame="710">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.07334816" />
+			</Items>
+			<Items Frame="711">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.06706119" />
+			</Items>
+			<Items Frame="712">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.06011665" />
+			</Items>
+			<Items Frame="713">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.05259693" />
+			</Items>
+			<Items Frame="714">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.04458416" />
+			</Items>
+			<Items Frame="715">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.03616047" />
+			</Items>
+			<Items Frame="716">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.027408" />
+			</Items>
+			<Items Frame="717">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.01840889" />
+			</Items>
+			<Items Frame="718">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1.00924551" />
+			</Items>
+			<Items Frame="719">
+				<Items xsi:type="FloatAttribute" Name="flyProgress" Value="1" />
+			</Items>
+		</ClipAttributes>
+	</ClipFile>
+</GestureBuilderFile>
