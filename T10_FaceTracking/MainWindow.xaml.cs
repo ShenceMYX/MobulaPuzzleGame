@@ -30,8 +30,6 @@ namespace T10_FaceTracking
         private KinectSensor sensor;
         private BodyFrameManager bodyFrameManager;
 
-        private RecognizerInfo kinectRecognizerInfo;
-        private SpeechRecognitionEngine recognizer;
 
         public MainWindow()
         {
@@ -46,9 +44,11 @@ namespace T10_FaceTracking
             ColorFrameManager colorFrameManager = new ColorFrameManager();
             colorFrameManager.Init(sensor, colorImg);
 
-            bodyFrameManager = new BodyFrameManager();
-            bodyFrameManager.Init(sensor, skeletonImg, recognitionResult);
+            VoiceRecogitionManager voiceRecogitionManager = new VoiceRecogitionManager();
+            voiceRecogitionManager.Init(sensor, recognizedCommand, beamAngleTxt, beamAngleConfidenceTxt);
 
+            bodyFrameManager = new BodyFrameManager();
+            bodyFrameManager.Init(sensor, skeletonImg, recognitionResult, voiceRecogitionManager);
            
         }
 

@@ -21,6 +21,7 @@ namespace T10_FaceTracking
             bodyFrameManager.DrawHandler += Draw;
             bodyFrameManager.BodyInputHandler += BodyInputDetection;
             bodyFrameManager.GestureInputHandler += GestureInputDetection;
+            bodyFrameManager.VoiceRecoManager.CommandInputHandler += VoiceInputDetection;
         }
 
         ~GameObject()
@@ -30,8 +31,9 @@ namespace T10_FaceTracking
             bodyFrameManager.DrawHandler -= Draw;
             bodyFrameManager.BodyInputHandler -= BodyInputDetection;
             bodyFrameManager.GestureInputHandler -= GestureInputDetection;
+            bodyFrameManager.VoiceRecoManager.CommandInputHandler -= VoiceInputDetection;
         }
-
+        protected virtual void VoiceInputDetection(string command) { }
         protected virtual void BodyInputDetection(Body body) { }
         protected virtual void GestureInputDetection(Gesture gesture) { }
         protected virtual void Start() { }

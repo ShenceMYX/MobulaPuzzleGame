@@ -79,15 +79,17 @@ namespace NUI3D
         public event Action<Gesture> GestureInputHandler;
         public event Action<DrawingContext> DrawHandler;
 
+        public VoiceRecogitionManager VoiceRecoManager { get; private set; }
         public void ShowHandStates(Boolean show = true)
         {
             showHandStates = show;
         }
 
-        public void Init(KinectSensor s, Image wpfImageForDisplay, TextBlock textForGesture, Boolean toColorSpace = true)
+        public void Init(KinectSensor s, Image wpfImageForDisplay, TextBlock textForGesture, VoiceRecogitionManager voiceManager, Boolean toColorSpace = true)
         {
             recognitionResult = textForGesture;
             sensor = s;
+            VoiceRecoManager = voiceManager;
 
             if (toColorSpace) // map the skeleton to the color space
             {
@@ -110,6 +112,7 @@ namespace NUI3D
             //ResetJointColors();
 
             FaceFrameReaderInit();
+
 
             Game game = new Game(this);
 

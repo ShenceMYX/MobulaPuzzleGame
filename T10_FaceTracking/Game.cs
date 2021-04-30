@@ -15,8 +15,10 @@ namespace T10_FaceTracking
     //Main Game Flow
     public class Game : GameObject
     {
+        private Player player;
         public Game(BodyFrameManager manager) : base(manager)
         {
+            player = new Player(manager);
         }
         ~Game()
         {
