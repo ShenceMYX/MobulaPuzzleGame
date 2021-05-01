@@ -21,7 +21,7 @@ namespace NUI3D
         private Body[] bodies;
         private Body closestBody;
 
-        private Boolean mapToColorSpace = true;
+        private bool mapToColorSpace = true;
 
         private DrawingGroup drawingGroup;
         private DrawingImage drawingImg;
@@ -66,7 +66,7 @@ namespace NUI3D
         private double jointSize = 5;
         private double boneThickness = 10;
 
-        private Boolean showHandStates = false;
+        private bool showHandStates = false;
 
         private VisualGestureBuilderFrameSource vgbFrameSource;
         private VisualGestureBuilderDatabase vgbDb;
@@ -76,6 +76,7 @@ namespace NUI3D
         public event Action UpateHandler;
         public event Action StartHandler;
         public event Action<Body> BodyInputHandler;
+        public event Action<FaceFrameResult> FaceInputHandler;
         public event Action<Gesture, DiscreteGestureResult> GestureInputHandler;
         public event Action<DrawingContext> DrawHandler;
 
@@ -233,6 +234,7 @@ namespace NUI3D
                     }
                     else
                     {
+                        FaceInputHandler?.Invoke(faceFrameResult);
                         // class exercise 1
                         DrawFace(dc, faceFrameResult);
                     }

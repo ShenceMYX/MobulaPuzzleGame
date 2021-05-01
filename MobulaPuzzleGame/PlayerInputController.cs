@@ -10,9 +10,12 @@ using System.Windows.Media;
 
 namespace MobulaPuzzleGame
 {
-    public class Player : GameObject
+    public class PlayerInputController : DetectInputGameObject
     {
-        public Player(BodyFrameManager manager) : base(manager)
+        public event Action FlyGestureDetectedHandler;
+        public event Action FlyRightGestureDetectedHandler;
+        public event Action FlyLeftGestureDetectedHandler;
+        public PlayerInputController(BodyFrameManager manager) : base(manager)
         {
         }
 
@@ -47,13 +50,21 @@ namespace MobulaPuzzleGame
 
 
             if (gesture.Name.Equals("directionright"))
+            {
                 Console.WriteLine("right!!!!!!!!!!1");
+                FlyRightGestureDetectedHandler?.Invoke();
+            }
             else if (gesture.Name.Equals("direction"))
+            {
                 Console.WriteLine("Left!!!!!!!!!!!!!11");
+                FlyLeftGestureDetectedHandler?.Invoke();
+
+            }
 
             if (r6 && r8)
             {
                 Console.WriteLine("flying!!!!!!!!!!!!!!!1");
+                FlyGestureDetectedHandler?.Invoke();
                 r6 = false;
                 r8 = false;
             }
