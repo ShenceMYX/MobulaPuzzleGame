@@ -85,9 +85,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DetectInputGameObject.cs" />
-    <Compile Include="PlayerInputController.cs" />
-    <Compile Include="VoiceRecogitionManager.cs" />
+    <Compile Include="Character\PlayerMotor.cs" />
+    <Compile Include="Common\ResourceManager.cs" />
+    <Compile Include="GameEngineFramework\DetectInputGameObject.cs" />
+    <Compile Include="Character\PlayerInputController.cs" />
+    <Compile Include="Common\VectorHelper.cs" />
+    <Compile Include="KinectDetection\VoiceRecogitionManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,18 +99,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BitmapHelper.cs" />
-    <Compile Include="BodyFrameManager.cs" />
-    <Compile Include="ColorFrameManager.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="GameObject.cs" />
-    <Compile Include="KinectAudioStream.cs" />
+    <Compile Include="Common\BitmapHelper.cs" />
+    <Compile Include="KinectDetection\BodyFrameManager.cs" />
+    <Compile Include="KinectDetection\ColorFrameManager.cs" />
+    <Compile Include="GameEngineFramework\Game.cs" />
+    <Compile Include="GameEngineFramework\GameObject.cs" />
+    <Compile Include="KinectDetection\KinectAudioStream.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Map.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

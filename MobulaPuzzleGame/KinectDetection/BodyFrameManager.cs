@@ -11,6 +11,7 @@ using Microsoft.Kinect;
 using Microsoft.Kinect.Face;
 using Microsoft.Kinect.VisualGestureBuilder;
 using MobulaPuzzleGame;
+using MobulaPuzzleGame.Common;
 
 namespace NUI3D
 {
@@ -77,11 +78,11 @@ namespace NUI3D
         public event Action StartHandler;
         public event Action<Body> BodyInputHandler;
         public event Action<FaceFrameResult> FaceInputHandler;
-        public event Action<Gesture, DiscreteGestureResult> GestureInputHandler;
+        public event Action<IReadOnlyDictionary<Gesture, DiscreteGestureResult>> GestureInputHandler;
         public event Action<DrawingContext> DrawHandler;
-
+        public event Action LoadImageHandler;
         public VoiceRecogitionManager VoiceRecoManager { get; private set; }
-        public void ShowHandStates(Boolean show = true)
+        public void ShowHandStates(bool show = true)
         {
             showHandStates = show;
         }
@@ -116,6 +117,7 @@ namespace NUI3D
 
 
             Game game = new Game(this);
+            ResourceManager resourceManager = new ResourceManager(this);
 
             LoadImages();
 
@@ -171,18 +173,16 @@ namespace NUI3D
                     bool recognized = false;
 
                     Brush brush = Brushes.Black;
-
+                    GestureInputHandler?.Invoke(results);
                     foreach (Gesture gesture in results.Keys)
                     {
                         DiscreteGestureResult result = results[gesture];
-                        if (result.Detected && result.Confidence > 0.26)
+                        if (result.Detected)
                         {
                             recognitionResult.Text = gesture.Name + " gesture recognized; confidence: " + result.Confidence;
                             recognized = true;
-
-                            GestureInputHandler?.Invoke(gesture, result);
-
                         }
+                        
                     }
                     if (!recognized) recognitionResult.Text = "No gesture recognized";
 
@@ -194,8 +194,8 @@ namespace NUI3D
         private void BodyFrameReaderInit()
         {
             BodyFrameReader bodyFrameReader = sensor.BodyFrameSource.OpenReader();
-            bodyFrameReader.FrameArrived += BodyFrameReader_FrameArrived; ;
-
+            bodyFrameReader.FrameArrived += BodyFrameReader_FrameArrived; 
+            
             // BodyCount: maximum number of bodies that can be tracked at one time
             bodies = new Body[sensor.BodyFrameSource.BodyCount];
         }
@@ -454,6 +454,7 @@ namespace NUI3D
 
         private void LoadImages()
         {
+            LoadImageHandler?.Invoke();
             face_no_smiling = new BitmapImage(
                 new Uri("Images/emoji_no_smiling.png", UriKind.Relative));
 

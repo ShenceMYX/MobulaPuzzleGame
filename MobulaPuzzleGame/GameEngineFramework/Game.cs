@@ -15,10 +15,14 @@ namespace MobulaPuzzleGame
     //Main Game Flow
     public class Game : GameObject
     {
-        private PlayerInputController player;
+        private PlayerInputController playerInput;
+        private PlayerMotor playerMotor;
+        private Map map;
         public Game(BodyFrameManager manager) : base(manager)
         {
-            player = new PlayerInputController(manager);
+            playerMotor = new PlayerMotor(manager, new Vector(2, 2), 0.02f);
+            playerInput = new PlayerInputController(manager, playerMotor);
+            map = new Map(manager);
         }
         ~Game()
         {
@@ -28,10 +32,12 @@ namespace MobulaPuzzleGame
             base.Start();
         }
 
-
         protected override void Update()
         {
             base.Update();
+            playerInput.UpdatePlayerTarget();
+            map.CollisionDetect();
+            playerMotor.Movement();
         }
 
         protected override void Draw(DrawingContext dc)
