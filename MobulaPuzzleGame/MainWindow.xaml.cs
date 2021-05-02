@@ -49,10 +49,19 @@ namespace MobulaPuzzleGame
 
             bodyFrameManager = new BodyFrameManager();
             bodyFrameManager.Init(sensor, skeletonImg, recognitionResult, voiceRecogitionManager);
-           
+
+            bodyFrameManager.playerInputController.VoiceDetectedHandler += GameStarted;
         }
 
-        
+        private void GameStarted()
+        {
+            startPage.Visibility = Visibility.Hidden;
+        }
 
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            bodyFrameManager.playerInputController.VoiceDetectedHandler -= GameStarted;
+
+        }
     }
 }

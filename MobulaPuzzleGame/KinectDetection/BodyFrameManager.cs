@@ -81,6 +81,7 @@ namespace NUI3D
         public event Action<IReadOnlyDictionary<Gesture, DiscreteGestureResult>> GestureInputHandler;
         public event Action<DrawingContext> DrawHandler;
         public event Action LoadImageHandler;
+        public PlayerInputController playerInputController { get; set; }
         public VoiceRecogitionManager VoiceRecoManager { get; private set; }
         public void ShowHandStates(bool show = true)
         {

@@ -24,7 +24,7 @@ namespace MobulaPuzzleGame
         public event Action FlyGestureDetectedHandler;
         public event Action FlyRightGestureDetectedHandler;
         public event Action FlyLeftGestureDetectedHandler;
-        public event Action HappyFaceDetectedHandler;
+        public event Action VoiceDetectedHandler;
         private PlayerMotor playerMotor;
         private MoveDirection moveDirection = MoveDirection.None;
         private double titleAnlge;
@@ -32,6 +32,7 @@ namespace MobulaPuzzleGame
         public PlayerInputController(BodyFrameManager manager, PlayerMotor motor) : base(manager)
         {
             playerMotor = motor;
+            manager.playerInputController = this;
         }
 
         protected override void Start()
@@ -142,7 +143,7 @@ namespace MobulaPuzzleGame
         {
             base.OnVoiceDetection(command);
             if (command.Contains("start"))
-                Console.WriteLine("!!!!!!!!!!!!");
+                VoiceDetectedHandler?.Invoke();
         }
 
         protected override void Draw(DrawingContext dc)

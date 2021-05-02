@@ -139,6 +139,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="toprightRock.png" />
+    <Resource Include="bg.png" />
+    <Resource Include="blocks.png" />
+    <Resource Include="bottomleftRock.png" />
     <Content Include="Images\emoji_no_smiling.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -148,6 +152,7 @@
     <Content Include="Images\sunglass.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="start.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MobulaPuzzleGame"
         mc:Ignorable="d"
-        Title="Face Tracking" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="Face Tracking" Height="450" Width="800" Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
         <Image x:Name="colorImg" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <Image x:Name="skeletonImg" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
@@ -14,5 +14,10 @@
         <TextBlock FontSize="20" Height="33" HorizontalAlignment="Left" Margin="12,73,0,0" Name="recognizedCommand" Text="Recognized Command: " VerticalAlignment="Top" Width="642" />
         <TextBlock Height="62" HorizontalAlignment="Left" Margin="12,0,0,0" x:Name="supportedCommands" VerticalAlignment="Bottom" Width="757" FontSize="14" ><Run Text="Supported commands: "/><LineBreak/><Run Text="- Clear the background; - Reset the joints"/><LineBreak/><Run Text="- Change background to [colorName]; - Set [jointType] to [colorName]"/></TextBlock>
         <TextBlock x:Name="recognitionResult" HorizontalAlignment="Right" Margin="0,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="22" Width="386"/>
+        <Image x:Name="startPage" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Source="start.png" Margin="867,43,-867,-43"/>
+        <Image x:Name="background" HorizontalAlignment="Left" Height="462" VerticalAlignment="Top" Width="792" Source="bg.png" Margin="0,0,0,-43"/>
+        <Image x:Name="Obstacles" HorizontalAlignment="Left" Height="419" Margin="5,0,0,0" VerticalAlignment="Top" Width="787" Source="blocks.png"/>
+        <Image x:Name="Entrance" HorizontalAlignment="Left" Height="100" Margin="5,309,0,0" VerticalAlignment="Top" Width="100" Source="bottomleftRock.png"/>
+        <Image x:Name="Exit" HorizontalAlignment="Left" Height="100" Margin="692,12,0,0" VerticalAlignment="Top" Width="100" Source="toprightRock.png"/>
     </Grid>
 </Window>
