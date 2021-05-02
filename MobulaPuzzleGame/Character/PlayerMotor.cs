@@ -20,6 +20,7 @@ namespace MobulaPuzzleGame
         public int curGridPosY { get; private set; }
         private float movingSpeed;
         public double towardAngle { get; private set; } = 0;
+        private Vector headDirection = new Vector(0, -1);
         private bool targetReached = true;
         public PlayerMotor(BodyFrameManager manager, Vector intiailPos, float sp) : base(manager)
         {
@@ -30,6 +31,37 @@ namespace MobulaPuzzleGame
             targetGridPosX = (int)intiailPos.X;
             targetGridPosY = (int)intiailPos.Y;
             movingSpeed = sp;
+        }
+
+        public void RotateHeadNormalClockwise(bool clockWise)
+        {
+            double x = headDirection.X;
+            double y = headDirection.Y;
+            if (!clockWise)
+            {
+                headDirection.X = y;
+                headDirection.Y = -x;
+                towardAngle -= 90;
+            }
+            else
+            {
+                headDirection.X = -y;
+                headDirection.Y = x;
+                towardAngle += 90;
+            }
+        }
+
+        public Vector GetHeadDirection()
+        {
+            return headDirection;
+        }
+        public void MoveForward()
+        {
+            if (targetReached)
+            {
+                targetGridPosX = curGridPosX + (int)headDirection.X;
+                targetGridPosY = curGridPosY + (int)headDirection.Y;
+            }
         }
 
         public void LookAtTarget(Vector direction)

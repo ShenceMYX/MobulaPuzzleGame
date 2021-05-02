@@ -16,7 +16,6 @@ namespace MobulaPuzzleGame
     public enum MoveDirection
     {
         None,
-        Up,
         Left, 
         Right
     }
@@ -28,6 +27,8 @@ namespace MobulaPuzzleGame
         public event Action HappyFaceDetectedHandler;
         private PlayerMotor playerMotor;
         private MoveDirection moveDirection = MoveDirection.None;
+        private double titleAnlge;
+        private bool moveForward = false;
         public PlayerInputController(BodyFrameManager manager, PlayerMotor motor) : base(manager)
         {
             playerMotor = motor;
@@ -38,31 +39,62 @@ namespace MobulaPuzzleGame
             base.Start();
         }
 
+        private DateTime startRotateTime = DateTime.Now;
+        private float rotationInterval = 1.5f;
         public void UpdatePlayerTarget()
         {
+            if (moveForward)
+            {
+                if(moveDirection == MoveDirection.None)
+                {
+                    playerMotor.MoveForward();
+                }
+                else
+                {
+                    if (DateTime.Now > startRotateTime)
+                    {
+                        if (moveDirection == MoveDirection.Left)
+                        {
+                            playerMotor.RotateHeadNormalClockwise(false);
+                            //playerMotor.MoveToTarget(new Vector(-1, 0));
+                        }
+                        else if (moveDirection == MoveDirection.Right)
+                        {
+                            playerMotor.RotateHeadNormalClockwise(true);
+                            //playerMotor.MoveToTarget(new Vector(1, 0));
+                        }
+                        startRotateTime = DateTime.Now.AddSeconds(rotationInterval);
+                    }
+                }
+            }
            
-            if(moveDirection == MoveDirection.Left)
-            {
-                playerMotor.MoveToTarget(new Vector(-1, 0));
-            }
-            else if (moveDirection == MoveDirection.Right)
-            {
-                playerMotor.MoveToTarget(new Vector(1, 0));
-            }
-            else if (moveDirection == MoveDirection.Up)
-            {
-                playerMotor.MoveToTarget(new Vector(0, -1));
-            }
-            //Console.WriteLine(moveDirection);
-
         }
 
         protected override void OnBodyDetected(Body body)
         {
             base.OnBodyDetected(body);
-            //if(body.HandLeftState == HandState.Lasso)
-            //    ...
-            //Point spineBase = bodyFrameManager.MapCameraPointToScreenSpace(body, JointType.SpineBase);
+
+            titleAnlge = GetBodyTitleAngle(body);
+
+            if (Math.Abs(titleAnlge) > 7)
+            {
+                moveDirection = titleAnlge > 0 ? MoveDirection.Left : MoveDirection.Right;
+            }
+            else
+            {
+                moveDirection = MoveDirection.None;
+            }
+        }
+
+        private double GetBodyTitleAngle(Body body)
+        {
+            Point spineBase = bodyFrameManager.MapCameraPointToScreenSpace(body, JointType.SpineBase);
+            Point spineShoulder = bodyFrameManager.MapCameraPointToScreenSpace(body, JointType.SpineShoulder);
+            Vector bodySpineLine = new Vector(spineShoulder.X - spineBase.X, spineShoulder.Y - spineBase.Y);
+
+            //Console.WriteLine(spineBase.Y-lastY);
+            //lastY = spineBase.Y;
+            return Vector.AngleBetween(bodySpineLine, new Vector(0, -100));
         }
 
         bool r6 = false;
@@ -82,10 +114,10 @@ namespace MobulaPuzzleGame
                     else if (result.Confidence >= 0.8 && result.Confidence <= 1)
                         r8 = true;
 
-                    if (gesture.Name.Equals("directionright"))
-                        moveDirection = MoveDirection.Left;
-                    else if (gesture.Name.Equals("direction"))
-                        moveDirection = MoveDirection.Right;
+                    //if (gesture.Name.Equals("directionright"))
+                    //    moveDirection = MoveDirection.Left;
+                    //else if (gesture.Name.Equals("direction"))
+                    //    moveDirection = MoveDirection.Right;
 
                     recognized = true;
                 }
@@ -93,25 +125,18 @@ namespace MobulaPuzzleGame
 
             if (r6 && r8)
             {
-                Console.WriteLine("flying!!!!!!!!!!!!!!!1");
+                //Console.WriteLine("flying!!!!!!!!!!!!!!!1");
                 //FlyGestureDetectedHandler?.Invoke();
                 //playerMotor.MoveToTarget(new Vector(0, -1));
                 r6 = false;
                 r8 = false;
-                moveDirection = MoveDirection.Up;
+                moveForward = true;
             }
 
             if (!recognized)
-                moveDirection = MoveDirection.None;
-           
+                moveForward = false;
         }
-
-        protected override void OnFaceDetected(FaceFrameResult result)
-        {
-            base.OnFaceDetected(result);
-            if (result.FaceProperties[FaceProperty.Happy] == DetectionResult.Yes)
-                HappyFaceDetectedHandler?.Invoke();
-        }
+        
 
         protected override void OnVoiceDetection(string command)
         {

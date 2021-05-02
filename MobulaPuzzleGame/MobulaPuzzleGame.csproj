@@ -87,6 +87,7 @@
     </ApplicationDefinition>
     <Compile Include="Character\PlayerMotor.cs" />
     <Compile Include="Common\ResourceManager.cs" />
+    <Compile Include="Character\TinyFish.cs" />
     <Compile Include="GameEngineFramework\DetectInputGameObject.cs" />
     <Compile Include="Character\PlayerInputController.cs" />
     <Compile Include="Common\VectorHelper.cs" />

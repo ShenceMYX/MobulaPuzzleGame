@@ -1,4 +1,5 @@
 ﻿using Microsoft.Kinect;
+using Microsoft.Kinect.Face;
 using Microsoft.Kinect.VisualGestureBuilder;
 using NUI3D;
 using System;
@@ -23,6 +24,9 @@ namespace MobulaPuzzleGame
             playerMotor = new PlayerMotor(manager, new Vector(2, 2), 0.02f);
             playerInput = new PlayerInputController(manager, playerMotor);
             map = new Map(manager);
+            TinyFish fish = new TinyFish(manager, new Vector(400, 400), 4f, 70,FaceProperty.Happy);
+            TinyFish fish1 = new TinyFish(manager, new Vector(420, 410), 4f, 70,FaceProperty.Happy);
+            TinyFish fish2 = new TinyFish(manager, new Vector(410, 430), 4f, 70,FaceProperty.Happy);
         }
         ~Game()
         {
