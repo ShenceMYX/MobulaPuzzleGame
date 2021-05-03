@@ -12,8 +12,8 @@ namespace MobulaPuzzleGame
     public class Map : GameObject
     {
         public static Map Instance { get; private set; }
-        private const int mapWidth = 16;
-        private const int mapHeight = 9;
+        private const int mapWidth = 10;
+        private const int mapHeight = 5;
         public int tileWidth { get; private set; } = 120;
         public int tileHeight { get; private set; } = 120;
         private int[,] mapLayoutGrid;
@@ -28,15 +28,11 @@ namespace MobulaPuzzleGame
             
             mapLayoutGrid = new int[mapHeight, mapWidth]
             {
-                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 },
-                {1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1 },
-                {1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1 },
-                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
-                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
-                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
-                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
-                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
-                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 }
+               {0,0,0,0,0,1,0,0,0,0 },
+                {0,0,1,2,0,0,1,0,0,1 },
+                {0,0,0,0,0,0,1,0,1,1 },
+                {0,0,1,0,0,0,2,0,0,0 },
+                {1,0,0,0,1,0,0,0,0,0 }
             };
         }
        
