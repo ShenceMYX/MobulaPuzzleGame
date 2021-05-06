@@ -72,7 +72,6 @@ namespace NUI3D
         private VisualGestureBuilderFrameSource vgbFrameSource;
         private VisualGestureBuilderDatabase vgbDb;
         private VisualGestureBuilderFrameReader vgbFrameReader;
-        private TextBlock recognitionResult;
 
         public event Action UpateHandler;
         public event Action StartHandler;
@@ -89,9 +88,8 @@ namespace NUI3D
             showHandStates = show;
         }
 
-        public void Init(KinectSensor s, Image wpfImageForDisplay, TextBlock textForGesture, VoiceRecogitionManager voiceManager, Boolean toColorSpace = true)
+        public void Init(KinectSensor s, Image wpfImageForDisplay, VoiceRecogitionManager voiceManager, Boolean toColorSpace = true)
         {
-            recognitionResult = textForGesture;
             sensor = s;
             VoiceRecoManager = voiceManager;
 
@@ -182,14 +180,11 @@ namespace NUI3D
                         DiscreteGestureResult result = results[gesture];
                         if (result.Detected)
                         {
-                            recognitionResult.Text = gesture.Name + " gesture recognized; confidence: " + result.Confidence;
                             recognized = true;
                         }
                         
                     }
-                    if (!recognized) recognitionResult.Text = "No gesture recognized";
-
-                    recognitionResult.Foreground = brush; // class exercise 
+                    
                 }
             }
         }

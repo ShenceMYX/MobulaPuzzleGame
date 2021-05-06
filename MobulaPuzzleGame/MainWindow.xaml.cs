@@ -41,14 +41,14 @@ namespace MobulaPuzzleGame
             sensor = KinectSensor.GetDefault();
             sensor.Open();
 
-            ColorFrameManager colorFrameManager = new ColorFrameManager();
-            colorFrameManager.Init(sensor, colorImg);
+            //ColorFrameManager colorFrameManager = new ColorFrameManager();
+            //colorFrameManager.Init(sensor, colorImg);
 
             VoiceRecogitionManager voiceRecogitionManager = new VoiceRecogitionManager();
-            voiceRecogitionManager.Init(sensor, recognizedCommand, beamAngleTxt, beamAngleConfidenceTxt);
+            voiceRecogitionManager.Init(sensor);
 
             bodyFrameManager = new BodyFrameManager();
-            bodyFrameManager.Init(sensor, skeletonImg, recognitionResult, voiceRecogitionManager);
+            bodyFrameManager.Init(sensor, skeletonImg, voiceRecogitionManager);
 
             bodyFrameManager.playerInputController.startVoiceDetectedHandler += GameStarted;
             bodyFrameManager.playerInputController.restartVoiceDetectedHandler += FailUIHide;

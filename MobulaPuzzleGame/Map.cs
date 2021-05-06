@@ -52,7 +52,11 @@ namespace MobulaPuzzleGame
         public void CollisionDetect()
         {
             //Console.WriteLine("tie: " + player.targetGridPosX + ","+ player.targetGridPosY);
-            if(GetTile(player.targetGridPosX, player.targetGridPosY) == 1)
+            if (player.targetGridPosX < 0) PlayerMotor.Instance.targetGridPosX = 0;
+            if (player.targetGridPosY < 0) PlayerMotor.Instance.targetGridPosY = 0;
+            if (player.targetGridPosX > mapWidth-1) PlayerMotor.Instance.targetGridPosX = mapWidth-1;
+            if (player.targetGridPosY > mapHeight-1) PlayerMotor.Instance.targetGridPosY = mapHeight-1;
+            if (GetTile(player.targetGridPosX, player.targetGridPosY) == 1)
             {
                 PlayerMotor.Instance.targetGridPosX = player.curGridPosX;
                 PlayerMotor.Instance.targetGridPosY = player.curGridPosY;

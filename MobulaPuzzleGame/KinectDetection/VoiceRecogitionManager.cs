@@ -16,16 +16,11 @@ namespace MobulaPuzzleGame
         private KinectSensor sensor;
         private RecognizerInfo kinectRecognizerInfo;
         private SpeechRecognitionEngine recognizer;
-        private TextBlock displayVoiceText;
-        private TextBlock beamAngleTxt;
-        private TextBlock beamAngleConfidenceTxt;
+       
         public event Action<string> CommandInputHandler;
-        public void Init(KinectSensor s, TextBlock voice_t, TextBlock angle_t, TextBlock confident_t)
+        public void Init(KinectSensor s)
         {
             sensor = s;
-            displayVoiceText = voice_t;
-            beamAngleTxt = angle_t;
-            beamAngleConfidenceTxt = confident_t;
 
             AudioBeamFrameReader audioBeamFrameReader = sensor.AudioSource.OpenReader();
             audioBeamFrameReader.FrameArrived += AudioBeamFrameReader_FrameArrived;
@@ -57,7 +52,6 @@ namespace MobulaPuzzleGame
 
         private void Recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
-            displayVoiceText.Text = "Content: " + e.Result.Text + "; confidence: " + e.Result.Confidence;
 
             if (e.Result.Confidence < 0.1) return;
 
@@ -80,11 +74,9 @@ namespace MobulaPuzzleGame
                 IReadOnlyList<AudioBeamSubFrame> subFrameList = frameList[0].SubFrames;
 
                 // Loop over all sub frames, extract audio buffer and beam information
-                foreach (AudioBeamSubFrame subFrame in subFrameList)
-                {
-                    beamAngleTxt.Text = "Beam Angle: " + subFrame.BeamAngle * 180 / Math.PI;
-                    beamAngleConfidenceTxt.Text = "Confidence: " + subFrame.BeamAngleConfidence;
-                }
+                //foreach (AudioBeamSubFrame subFrame in subFrameList)
+                //{
+                //}
             }
         }
 
