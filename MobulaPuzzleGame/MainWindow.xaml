@@ -5,19 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MobulaPuzzleGame"
         mc:Ignorable="d"
-        Title="Face Tracking" Height="450" Width="800" Loaded="Window_Loaded" Closed="Window_Closed">
+        Title="Mobula Puzzle Game" Height="450" Width="800" Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="148*"/>
+            <RowDefinition Height="271*"/>
+        </Grid.RowDefinitions>
         <Image x:Name="colorImg" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
-        <Image x:Name="skeletonImg" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
         <TextBlock Height="36" HorizontalAlignment="Left" Margin="12,12,0,0" Name="beamAngleTxt" Text="Beam Angle: " VerticalAlignment="Top" Width="642" FontSize="20" />
         <TextBlock Height="34" HorizontalAlignment="Left" Margin="12,43,0,0" x:Name="beamAngleConfidenceTxt" Text="Beam Angle Confidence: " VerticalAlignment="Top" Width="642" FontSize="20" />
         <TextBlock FontSize="20" Height="33" HorizontalAlignment="Left" Margin="12,73,0,0" Name="recognizedCommand" Text="Recognized Command: " VerticalAlignment="Top" Width="642" />
-        <TextBlock Height="62" HorizontalAlignment="Left" Margin="12,0,0,0" x:Name="supportedCommands" VerticalAlignment="Bottom" Width="757" FontSize="14" ><Run Text="Supported commands: "/><LineBreak/><Run Text="- Clear the background; - Reset the joints"/><LineBreak/><Run Text="- Change background to [colorName]; - Set [jointType] to [colorName]"/></TextBlock>
+        <TextBlock Height="62" HorizontalAlignment="Left" Margin="12,0,0,0" x:Name="supportedCommands" VerticalAlignment="Bottom" Width="757" FontSize="14" Grid.Row="1" ><Run Text="Supported commands: "/><LineBreak/><Run Text="- Clear the background; - Reset the joints"/><LineBreak/><Run Text="- Change background to [colorName]; - Set [jointType] to [colorName]"/></TextBlock>
         <TextBlock x:Name="recognitionResult" HorizontalAlignment="Right" Margin="0,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="22" Width="386"/>
-        <Image x:Name="startPage" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Source="start.png" Margin="867,43,-867,-43"/>
-        <Image x:Name="background" HorizontalAlignment="Left" Height="462" VerticalAlignment="Top" Width="792" Source="bg.png" Margin="0,0,0,-43"/>
-        <Image x:Name="Obstacles" HorizontalAlignment="Left" Height="419" Margin="5,0,0,0" VerticalAlignment="Top" Width="787" Source="blocks.png"/>
-        <Image x:Name="Entrance" HorizontalAlignment="Left" Height="100" Margin="5,309,0,0" VerticalAlignment="Top" Width="100" Source="bottomleftRock.png"/>
+        <Image x:Name="background" HorizontalAlignment="Left" VerticalAlignment="Top" Source="bg.png" Grid.RowSpan="2"/>
+        <Image x:Name="Obstacles" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Source="blocks.png" RenderTransformOrigin="0.545,0.501" Grid.RowSpan="2"/>
+        <Image x:Name="Entrance" HorizontalAlignment="Left" Height="100" Margin="5,161,0,0" VerticalAlignment="Top" Width="100" Source="bottomleftRock.png" Grid.Row="1"/>
         <Image x:Name="Exit" HorizontalAlignment="Left" Height="100" Margin="692,12,0,0" VerticalAlignment="Top" Width="100" Source="toprightRock.png"/>
+        <Image x:Name="skeletonImg" HorizontalAlignment="Left" Margin="0,10,0,-3" VerticalAlignment="Top" Height="412" Grid.RowSpan="2" Width="792"/>
+        <Image x:Name="dark_blood_bar_png" Margin="100,12,105,103" Source="dark_blood_bar.png" Stretch="Fill"/>
+        <Image x:Name="red_blood_bar" Margin="100,12,105,100" Source="red_blood_bar.png" Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform/>
+                    <RotateTransform/>
+                    <ScaleTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="next" Margin="0,0,0,-3" Source="next.png" Stretch="Fill" Visibility="Hidden" Grid.RowSpan="2"/>
+        <Image x:Name="fail" Margin="-1,0,1,-3" Source="fail.png" Stretch="Fill" Grid.RowSpan="2" Visibility="Hidden"/>
+        <Image x:Name="startPage" Margin="-2,3,1,10" Source="start.png" Stretch="Fill" Grid.RowSpan="2" Visibility="Hidden"/>
     </Grid>
 </Window>

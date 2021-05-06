@@ -122,17 +122,33 @@ namespace MobulaPuzzleGame
         private void BuildGrammar() // call it Window_Loaded()
         {
             GrammarBuilder grammarBuilder = new GrammarBuilder();
-
             grammarBuilder.Append("start");
-
             // the same culture as the recognizer (US English)
             grammarBuilder.Culture = kinectRecognizerInfo.Culture;
-
             Grammar grammar = new Grammar(grammarBuilder);
+
+            GrammarBuilder grammarBuilder2 = new GrammarBuilder();
+            grammarBuilder2.Append("next");
+            // the same culture as the recognizer (US English)
+            grammarBuilder2.Culture = kinectRecognizerInfo.Culture;
+            Grammar grammar2 = new Grammar(grammarBuilder2);
+
+
+
+            GrammarBuilder grammarBuilder3 = new GrammarBuilder();
+
+            grammarBuilder3.Append("retry");
+
+            // the same culture as the recognizer (US English)
+            grammarBuilder3.Culture = kinectRecognizerInfo.Culture;
+
+            Grammar grammar3 = new Grammar(grammarBuilder3);
 
 
             recognizer.LoadGrammar(grammar);
-            
+            recognizer.LoadGrammar(grammar2);
+            recognizer.LoadGrammar(grammar3);
+
         }
     }
 }

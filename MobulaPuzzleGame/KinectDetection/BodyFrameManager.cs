@@ -82,6 +82,7 @@ namespace NUI3D
         public event Action<DrawingContext> DrawHandler;
         public event Action LoadImageHandler;
         public PlayerInputController playerInputController { get; set; }
+        public PlayerMotor playerMotor { get; set; }
         public VoiceRecogitionManager VoiceRecoManager { get; private set; }
         public void ShowHandStates(bool show = true)
         {
@@ -123,6 +124,7 @@ namespace NUI3D
             LoadImages();
 
             StartHandler?.Invoke();
+
         }
 
         public Point MapCameraPointToScreenSpace(Body body, JointType jointType)
@@ -251,7 +253,7 @@ namespace NUI3D
 
             // prevent drawing outside of our render area
             drawingGroup.ClipGeometry = new RectangleGeometry(
-                                        new Rect(0.0, 0.0, drawingImgWidth, drawingImgHeight));
+                                        new Rect(0.0, 0.0, 2120, drawingImgHeight));
         }
 
         private void DrawSkeleton(Body body, DrawingContext dc)

@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Common;
 using Microsoft.Kinect;
 using Microsoft.Kinect.VisualGestureBuilder;
 using Microsoft.Speech.AudioFormat;
@@ -50,7 +50,14 @@ namespace MobulaPuzzleGame
             bodyFrameManager = new BodyFrameManager();
             bodyFrameManager.Init(sensor, skeletonImg, recognitionResult, voiceRecogitionManager);
 
-            bodyFrameManager.playerInputController.VoiceDetectedHandler += GameStarted;
+            bodyFrameManager.playerInputController.startVoiceDetectedHandler += GameStarted;
+            bodyFrameManager.playerInputController.restartVoiceDetectedHandler += FailUIHide;
+            bodyFrameManager.playerInputController.restartVoiceDetectedHandler += ResetPaintBar;
+            bodyFrameManager.playerInputController.nextVoiceDetectedHandler += NextLevelUIHide;
+           
+            bodyFrameManager.playerMotor.PaintDecreaseHandler += OnPaintDecrease;
+            bodyFrameManager.playerMotor.PaintRunOutHandler += FailUIAppear;
+            bodyFrameManager.playerMotor.LevelClearHandler += NextLevelUIAppear;
         }
 
         private void GameStarted()
@@ -58,10 +65,44 @@ namespace MobulaPuzzleGame
             startPage.Visibility = Visibility.Hidden;
         }
 
+        private void FailUIAppear()
+        {
+            fail.Visibility = Visibility.Visible;
+        }
+        private void FailUIHide()
+        {
+            fail.Visibility = Visibility.Hidden;
+        }
+
+        private void NextLevelUIAppear()
+        {
+            next.Visibility = Visibility.Visible;
+        }
+        private void NextLevelUIHide()
+        {
+            next.Visibility = Visibility.Hidden;
+        }
+
+        private void OnPaintDecrease(float decreaseHPPro)
+        {
+            red_blood_bar.ScaleImg(-decreaseHPPro, 0);
+        }
+
+        private void ResetPaintBar()
+        {
+            red_blood_bar.SetImgScale(1, 1);
+        }
+
         private void Window_Closed(object sender, EventArgs e)
         {
-            bodyFrameManager.playerInputController.VoiceDetectedHandler -= GameStarted;
+            bodyFrameManager.playerInputController.startVoiceDetectedHandler -= GameStarted;
+            bodyFrameManager.playerInputController.restartVoiceDetectedHandler -= FailUIHide;
+            bodyFrameManager.playerInputController.restartVoiceDetectedHandler -= ResetPaintBar;
+            bodyFrameManager.playerInputController.nextVoiceDetectedHandler -= NextLevelUIHide;
 
+            bodyFrameManager.playerMotor.PaintDecreaseHandler -= OnPaintDecrease;
+            bodyFrameManager.playerMotor.PaintRunOutHandler -= FailUIAppear;
+            bodyFrameManager.playerMotor.LevelClearHandler -= NextLevelUIAppear;
         }
     }
 }

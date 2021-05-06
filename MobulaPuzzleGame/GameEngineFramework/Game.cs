@@ -1,6 +1,7 @@
 ﻿using Microsoft.Kinect;
 using Microsoft.Kinect.Face;
 using Microsoft.Kinect.VisualGestureBuilder;
+using MobulaPuzzleGame.Character;
 using NUI3D;
 using System;
 using System.Collections.Generic;
@@ -19,17 +20,27 @@ namespace MobulaPuzzleGame
         private PlayerInputController playerInput;
         private PlayerMotor playerMotor;
         private Map map;
+        private bool gameStarted = false;
         public Game(BodyFrameManager manager) : base(manager)
         {
-            playerMotor = new PlayerMotor(manager, new Vector(2, 2), 0.02f);
+            playerMotor = new PlayerMotor(manager, new Vector(0, 4), 0.02f, 14);
             playerInput = new PlayerInputController(manager, playerMotor);
             map = new Map(manager);
-            TinyFish fish = new TinyFish(manager, new Vector(400, 400), 4f, 70,FaceProperty.Happy);
-            TinyFish fish1 = new TinyFish(manager, new Vector(420, 410), 4f, 70,FaceProperty.Happy);
-            TinyFish fish2 = new TinyFish(manager, new Vector(410, 430), 4f, 70,FaceProperty.Happy);
+            FishGroup fishGroup = new FishGroup(manager, new Vector(3, 2), 4f, 100, FaceProperty.Happy);
+            FishGroup fishGroup2 = new FishGroup(manager, new Vector(6, 2), 4f, 100, FaceProperty.MouthOpen);
+            playerInput.startVoiceDetectedHandler += SetGameStart;
+            playerInput.nextVoiceDetectedHandler += SetGameStart;
+            playerInput.restartVoiceDetectedHandler += SetGameStart;
+            playerMotor.PaintRunOutHandler += SetGameNotStart;
+            playerMotor.LevelClearHandler += SetGameNotStart;
         }
         ~Game()
         {
+            playerInput.startVoiceDetectedHandler -= SetGameStart;
+            playerInput.nextVoiceDetectedHandler -= SetGameStart;
+            playerInput.restartVoiceDetectedHandler -= SetGameStart;
+            playerMotor.PaintRunOutHandler -= SetGameNotStart;
+            playerMotor.LevelClearHandler -= SetGameNotStart;
         }
         protected override void Start()
         {
@@ -39,14 +50,21 @@ namespace MobulaPuzzleGame
         protected override void Update()
         {
             base.Update();
+            if (!gameStarted) return;
             playerInput.UpdatePlayerTarget();
             map.CollisionDetect();
             playerMotor.Movement();
         }
 
-        protected override void Draw(DrawingContext dc)
+        private void SetGameStart()
         {
-            base.Draw(dc);
+            gameStarted = true;
         }
+
+        private void SetGameNotStart()
+        {
+            gameStarted = false;
+        }
+       
     }
 }

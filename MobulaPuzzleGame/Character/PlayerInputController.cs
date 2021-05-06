@@ -21,10 +21,9 @@ namespace MobulaPuzzleGame
     }
     public class PlayerInputController : DetectInputGameObject
     {
-        public event Action FlyGestureDetectedHandler;
-        public event Action FlyRightGestureDetectedHandler;
-        public event Action FlyLeftGestureDetectedHandler;
-        public event Action VoiceDetectedHandler;
+        public event Action startVoiceDetectedHandler;
+        public event Action restartVoiceDetectedHandler;
+        public event Action nextVoiceDetectedHandler;
         private PlayerMotor playerMotor;
         private MoveDirection moveDirection = MoveDirection.None;
         private double titleAnlge;
@@ -143,13 +142,13 @@ namespace MobulaPuzzleGame
         {
             base.OnVoiceDetection(command);
             if (command.Contains("start"))
-                VoiceDetectedHandler?.Invoke();
+                startVoiceDetectedHandler?.Invoke();
+            else if (command.Contains("retry"))
+                restartVoiceDetectedHandler?.Invoke();
+            else if (command.Contains("next"))
+                nextVoiceDetectedHandler?.Invoke();
         }
 
-        protected override void Draw(DrawingContext dc)
-        {
-            base.Draw(dc);
-
-        }
+        
     }
 }
