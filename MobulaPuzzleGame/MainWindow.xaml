@@ -29,6 +29,6 @@
         </Image>
         <Image x:Name="next" Margin="0,0,0,-3" Source="next.png" Stretch="Fill" Visibility="Hidden" Grid.RowSpan="2"/>
         <Image x:Name="fail" Margin="-1,0,1,-3" Source="fail.png" Stretch="Fill" Grid.RowSpan="2" Visibility="Hidden"/>
-        <Image x:Name="startPage" Margin="0,0,-1,-3" Source="start.png" Stretch="Fill" Grid.RowSpan="2" Visibility="Hidden" />
+        <Image x:Name="startPage" Margin="0,0,-1,-3" Source="start.png" Stretch="Fill" Grid.RowSpan="2" />
     </Grid>
 </Window>

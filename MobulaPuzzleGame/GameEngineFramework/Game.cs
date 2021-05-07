@@ -20,7 +20,7 @@ namespace MobulaPuzzleGame
         private PlayerInputController playerInput;
         private PlayerMotor playerMotor;
         private Map map;
-        private bool gameStarted = true;
+        private bool gameStarted = false;
         public Game(BodyFrameManager manager) : base(manager)
         {
             playerMotor = new PlayerMotor(manager, new Vector(0, 4), 0.02f, 14);
