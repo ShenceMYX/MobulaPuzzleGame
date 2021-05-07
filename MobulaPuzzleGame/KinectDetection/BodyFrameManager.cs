@@ -212,8 +212,6 @@ namespace NUI3D
                     dc.DrawRectangle(Brushes.Transparent, null,
                             new Rect(0.0, 0.0, drawingImgWidth, drawingImgHeight));
 
-                   
-
                     closestBody = GetClosestBody(bodyFrame);
                     if (closestBody == null) return;
 
@@ -476,20 +474,20 @@ namespace NUI3D
                DrawRotatingImage(dc, face_no_smiling, faceRect, -roll); // class exercise 4           
 
             // draw glasses
-            if (result.FaceProperties[FaceProperty.WearingGlasses] == DetectionResult.Yes)
-            {
-                PointF leftEye = result.FacePointsInColorSpace[FacePointType.EyeLeft];
-                PointF rightEye = result.FacePointsInColorSpace[FacePointType.EyeRight];
-                float eyeY = (leftEye.Y + rightEye.Y) / 2;
-                Rect gR = new Rect(0, 0, faceRect.Width, 100);
-                gR.Height = faceRect.Width / glassesAspectRatio;
-                gR.X = faceRect.Left;
-                gR.Y = eyeY - faceRect.Height * 0.1;
-                // dc.DrawImage(glasses, gR);
-                // class exercise 4: draw the rotating glasses
-                Point faceCenter = new Point((faceRect.Left + faceRect.Right) / 2, (faceRect.Top + faceRect.Bottom) / 2);
-                DrawRotatingImage(dc, glasses, gR, faceCenter, -roll);
-            }
+            //if (result.FaceProperties[FaceProperty.WearingGlasses] == DetectionResult.Yes)
+            //{
+            //    PointF leftEye = result.FacePointsInColorSpace[FacePointType.EyeLeft];
+            //    PointF rightEye = result.FacePointsInColorSpace[FacePointType.EyeRight];
+            //    float eyeY = (leftEye.Y + rightEye.Y) / 2;
+            //    Rect gR = new Rect(0, 0, faceRect.Width, 100);
+            //    gR.Height = faceRect.Width / glassesAspectRatio;
+            //    gR.X = faceRect.Left;
+            //    gR.Y = eyeY - faceRect.Height * 0.1;
+            //    // dc.DrawImage(glasses, gR);
+            //    // class exercise 4: draw the rotating glasses
+            //    Point faceCenter = new Point((faceRect.Left + faceRect.Right) / 2, (faceRect.Top + faceRect.Bottom) / 2);
+            //    DrawRotatingImage(dc, glasses, gR, faceCenter, -roll);
+            //}
         }
 
         private void ExtractFaceRotationInDegrees(Vector4 rotQuaternion, out int pitch, out int yaw, out int roll)

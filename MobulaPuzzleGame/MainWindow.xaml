@@ -13,12 +13,12 @@
         </Grid.RowDefinitions>
         <Image x:Name="colorImg" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <Image x:Name="background" HorizontalAlignment="Left" VerticalAlignment="Top" Source="bg.png" Grid.RowSpan="2"/>
-        <Image x:Name="Obstacles" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Source="blocks.png" RenderTransformOrigin="0.545,0.501" Grid.RowSpan="2"/>
         <Image x:Name="Entrance" HorizontalAlignment="Left" Height="100" Margin="5,161,0,0" VerticalAlignment="Top" Width="100" Source="bottomleftRock.png" Grid.Row="1"/>
         <Image x:Name="Exit" HorizontalAlignment="Left" Height="100" Margin="692,12,0,0" VerticalAlignment="Top" Width="100" Source="toprightRock.png"/>
-        <Image x:Name="skeletonImg" HorizontalAlignment="Left" Margin="0,10,0,-3" VerticalAlignment="Top" Height="412" Grid.RowSpan="2" Width="792"/>
+        <Image x:Name="blocks_png" Margin="0,-19,5,10" Source="blocks.png" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image x:Name="skeletonImg" HorizontalAlignment="Left" Margin="0,10,0,-3" VerticalAlignment="Top" Grid.RowSpan="2" Height="412" Width="793"/>
         <Image x:Name="dark_blood_bar_png" Margin="100,12,105,103" Source="dark_blood_bar.png" Stretch="Fill"/>
-        <Image x:Name="red_blood_bar" Margin="100,12,105,100" Source="red_blood_bar.png" Stretch="Fill">
+        <Image x:Name="red_blood_bar" Margin="100,12,100,100" Source="Rect.png" Stretch="Fill">
             <Image.RenderTransform>
                 <TransformGroup>
                     <TranslateTransform/>
@@ -29,6 +29,6 @@
         </Image>
         <Image x:Name="next" Margin="0,0,0,-3" Source="next.png" Stretch="Fill" Visibility="Hidden" Grid.RowSpan="2"/>
         <Image x:Name="fail" Margin="-1,0,1,-3" Source="fail.png" Stretch="Fill" Grid.RowSpan="2" Visibility="Hidden"/>
-        <Image x:Name="startPage" Margin="-2,3,1,3" Source="start.png" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image x:Name="startPage" Margin="0,0,-1,-3" Source="start.png" Stretch="Fill" Grid.RowSpan="2" Visibility="Hidden" />
     </Grid>
 </Window>

@@ -20,28 +20,22 @@ namespace MobulaPuzzleGame
         private PlayerInputController playerInput;
         private PlayerMotor playerMotor;
         private Map map;
-        private bool gameStarted = false;
+        private bool gameStarted = true;
         public Game(BodyFrameManager manager) : base(manager)
         {
             playerMotor = new PlayerMotor(manager, new Vector(0, 4), 0.02f, 14);
             playerInput = new PlayerInputController(manager, playerMotor);
             map = new Map(manager);
             FishGroup fishGroup = new FishGroup(manager, new Vector(3, 2), 4f, 100, FaceProperty.Happy);
-            FishGroup fishGroup2 = new FishGroup(manager, new Vector(6, 2), 4f, 100, FaceProperty.MouthOpen);
-            playerInput.startVoiceDetectedHandler += SetGameStart;
-            playerInput.nextVoiceDetectedHandler += SetGameStart;
-            playerInput.restartVoiceDetectedHandler += SetGameStart;
-            playerMotor.PaintRunOutHandler += SetGameNotStart;
-            playerMotor.LevelClearHandler += SetGameNotStart;
+            FishGroup fishGroup2 = new FishGroup(manager, new Vector(6, 2), 4f, 100, FaceProperty.Happy);
+            RegisterUIEvents();
         }
+
         ~Game()
         {
-            playerInput.startVoiceDetectedHandler -= SetGameStart;
-            playerInput.nextVoiceDetectedHandler -= SetGameStart;
-            playerInput.restartVoiceDetectedHandler -= SetGameStart;
-            playerMotor.PaintRunOutHandler -= SetGameNotStart;
-            playerMotor.LevelClearHandler -= SetGameNotStart;
+            UnregisterUIEvents();
         }
+
         protected override void Start()
         {
             base.Start();
@@ -65,6 +59,23 @@ namespace MobulaPuzzleGame
         {
             gameStarted = false;
         }
-       
+
+        private void RegisterUIEvents()
+        {
+            playerInput.startVoiceDetectedHandler += SetGameStart;
+            playerInput.nextVoiceDetectedHandler += SetGameStart;
+            playerInput.restartVoiceDetectedHandler += SetGameStart;
+            playerMotor.PaintRunOutHandler += SetGameNotStart;
+            playerMotor.LevelClearHandler += SetGameNotStart;
+        }
+        private void UnregisterUIEvents()
+        {
+            playerInput.startVoiceDetectedHandler -= SetGameStart;
+            playerInput.nextVoiceDetectedHandler -= SetGameStart;
+            playerInput.restartVoiceDetectedHandler -= SetGameStart;
+            playerMotor.PaintRunOutHandler -= SetGameNotStart;
+            playerMotor.LevelClearHandler -= SetGameNotStart;
+        }
+
     }
 }

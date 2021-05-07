@@ -50,11 +50,16 @@ namespace MobulaPuzzleGame
             bodyFrameManager = new BodyFrameManager();
             bodyFrameManager.Init(sensor, skeletonImg, voiceRecogitionManager);
 
+            RegisterEvents();
+        }
+
+        private void RegisterEvents()
+        {
             bodyFrameManager.playerInputController.startVoiceDetectedHandler += GameStarted;
             bodyFrameManager.playerInputController.restartVoiceDetectedHandler += FailUIHide;
             bodyFrameManager.playerInputController.restartVoiceDetectedHandler += ResetPaintBar;
             bodyFrameManager.playerInputController.nextVoiceDetectedHandler += NextLevelUIHide;
-           
+
             bodyFrameManager.playerMotor.PaintDecreaseHandler += OnPaintDecrease;
             bodyFrameManager.playerMotor.PaintRunOutHandler += FailUIAppear;
             bodyFrameManager.playerMotor.LevelClearHandler += NextLevelUIAppear;
@@ -94,6 +99,11 @@ namespace MobulaPuzzleGame
         }
 
         private void Window_Closed(object sender, EventArgs e)
+        {
+            UnregisterEvents();
+        }
+
+        private void UnregisterEvents()
         {
             bodyFrameManager.playerInputController.startVoiceDetectedHandler -= GameStarted;
             bodyFrameManager.playerInputController.restartVoiceDetectedHandler -= FailUIHide;

@@ -15,21 +15,20 @@ namespace MobulaPuzzleGame
         public static Map Instance { get; private set; }
         private const int mapWidth = 10;
         private const int mapHeight = 5;
-        public int tileWidth { get; private set; } = 216;
-        public int tileHeight { get; private set; } = 216;
+        public int tileWidth { get; private set; } = 210;
+        public int tileHeight { get; private set; } = 210;
         private int[,] mapLayoutGrid;
-        private int[,] initialMapLayout;
         private PlayerMotor player;
         private int[,] inkRandIndex;
         private int[,] inkRandAngle;
-        public float mapOffsetX { get; private set; } = 0;
-        public float mapOffsetY { get; private set; } = 10;
+        //public float mapOffsetX { get; private set; } = 0;
+        //public float mapOffsetY { get; private set; } = 10;
         public Map(BodyFrameManager manager) : base(manager)
         {
             Instance = this;
             player = PlayerMotor.Instance;
 
-            initialMapLayout = new int[mapHeight, mapWidth]
+            mapLayoutGrid = new int[mapHeight, mapWidth]
             {
                 {0,0,0,0,0,0,0,0,1,5 },
                 {0,0,1,0,0,0,1,0,0,0 },
@@ -39,7 +38,6 @@ namespace MobulaPuzzleGame
             };
             inkRandIndex = new int[mapHeight, mapWidth];
             inkRandAngle = new int[mapHeight, mapWidth];
-            mapLayoutGrid = initialMapLayout;
             bodyFrameManager.playerInputController.restartVoiceDetectedHandler += ResetMap;
         }
 
@@ -85,15 +83,17 @@ namespace MobulaPuzzleGame
 
         private void DrawTile(DrawingContext drawingContext, int id, int x, int y)
         {
-            if (id==1)
-                drawingContext.DrawRectangle(new SolidColorBrush(Color.FromRgb(255, 0, 255)), null, new Rect(x*tileWidth, y*tileHeight, tileWidth, tileHeight));
+            if (id == 1)
+                drawingContext.DrawRectangle(new SolidColorBrush(Color.FromRgb(255, 0, 255)), null, new Rect(x * tileWidth, y * tileHeight, tileWidth, tileHeight));
             if (id == 2)
             {
+                //if (x == 0 && y == 4)
+                //    Console.WriteLine((x * tileWidth + tileWidth / 2 - 30) + ", " + (y * tileHeight + tileHeight / 2 - 30));
                 //drawingContext.DrawRectangle(new SolidColorBrush(Color.FromRgb(255, 0, 0)), null, new Rect(x * tileWidth, y * tileHeight, tileWidth, tileHeight));
                 drawingContext.DrawRotatedImage(ResourceManager.Instance.inks[inkRandIndex[y, x]], new Point(x * tileWidth + tileWidth/2-30, y * tileHeight+ tileHeight/2-30), new Rect(0, 0, tileWidth+60, tileHeight+60), inkRandAngle[y,x]);
             }
-            if (id == 3)
-                drawingContext.DrawRectangle(new SolidColorBrush(Color.FromRgb(0, 0, 255)), null, new Rect(x * tileWidth, y * tileHeight , tileWidth, tileHeight));
+            //if (id == 3)
+            //    drawingContext.DrawRectangle(new SolidColorBrush(Color.FromRgb(0, 0, 255)), null, new Rect(x * tileWidth, y * tileHeight , tileWidth, tileHeight));
               //  drawingContext.DrawRectangle(new SolidColorBrush(Color.FromRgb(0, 0, 0)), null, new Rect(0, 0, 2220, 1080));
         }
 

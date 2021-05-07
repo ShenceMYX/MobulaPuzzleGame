@@ -142,11 +142,21 @@ namespace MobulaPuzzleGame
         {
             base.OnVoiceDetection(command);
             if (command.Contains("start"))
-                startVoiceDetectedHandler?.Invoke();
-            else if (command.Contains("retry"))
-                restartVoiceDetectedHandler?.Invoke();
+            {
+                if (command.Contains("the game"))
+                    startVoiceDetectedHandler?.Invoke();
+
+            }
+            else if (command.Contains("replay"))
+            {
+                if (command.Contains("this level"))
+                    restartVoiceDetectedHandler?.Invoke();
+            }
             else if (command.Contains("next"))
-                nextVoiceDetectedHandler?.Invoke();
+            {
+                if (command.Contains("level"))
+                    nextVoiceDetectedHandler?.Invoke();
+            }
         }
 
         

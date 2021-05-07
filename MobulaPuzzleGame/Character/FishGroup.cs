@@ -113,13 +113,13 @@ namespace MobulaPuzzleGame.Character
         protected override void Draw(DrawingContext dc)
         {
             base.Draw(dc);
-            dc.DrawRectangle(new SolidColorBrush(Color.FromArgb(50, 255, 255, 220)), null, 
-                new Rect(position.X, position.Y , Map.Instance.tileWidth , Map.Instance.tileHeight));
+            //dc.DrawRectangle(new SolidColorBrush(Color.FromArgb(50, 255, 255, 220)), null, 
+            //    new Rect(position.X, position.Y , Map.Instance.tileWidth , Map.Instance.tileHeight));
            
-            dc.DrawEllipse(new SolidColorBrush(Color.FromArgb(50, 255, 25, 120)), null, 
-                new Point(position.X, position.Y),
-                Math.Sqrt(Map.Instance.tileWidth * Map.Instance.tileWidth + Map.Instance.tileHeight * Map.Instance.tileHeight), 
-                Math.Sqrt(Map.Instance.tileWidth * Map.Instance.tileWidth + Map.Instance.tileHeight * Map.Instance.tileHeight));
+            //dc.DrawEllipse(new SolidColorBrush(Color.FromArgb(50, 255, 25, 120)), null, 
+            //    new Point(position.X, position.Y),
+            //    Math.Sqrt(Map.Instance.tileWidth * Map.Instance.tileWidth + Map.Instance.tileHeight * Map.Instance.tileHeight), 
+            //    Math.Sqrt(Map.Instance.tileWidth * Map.Instance.tileWidth + Map.Instance.tileHeight * Map.Instance.tileHeight));
             
             dc.DrawRotatedImage(ResourceManager.Instance.sfish1, 
                 new Point(position.X + Map.Instance.tileWidth/2, position.Y+ Map.Instance.tileHeight/2), 

@@ -157,9 +157,9 @@ namespace MobulaPuzzleGame
             //Console.WriteLine("pos:" + currentPosition.X + "," + currentPosition.Y);
             dc.DrawRotatedImage(enterFishZoneCount==rescureFish? ResourceManager.Instance.fish: fishImage, new Point(currentPosition.X * Map.Instance.tileWidth-20 + Map.Instance.tileWidth/2, 
                 currentPosition.Y * Map.Instance.tileHeight+ Map.Instance.tileHeight/2-20), 
-                new Rect(0, 0, Map.Instance.tileWidth+40, Map.Instance.tileHeight+40), towardAngle);
-            dc.DrawRectangle(new SolidColorBrush(Color.FromArgb(100, 0, 255, 0)), null, new Rect(targetGridPosX * Map.Instance.tileWidth, targetGridPosY * Map.Instance.tileHeight, Map.Instance.tileWidth, Map.Instance.tileHeight));
-            dc.DrawRectangle(new SolidColorBrush(Color.FromArgb(100, 0, 255, 255)), null, new Rect(curGridPosX * Map.Instance.tileWidth, curGridPosY * Map.Instance.tileHeight, Map.Instance.tileWidth, Map.Instance.tileHeight));
+                new Rect(0, 0, Map.Instance.tileWidth+80, Map.Instance.tileHeight+80), towardAngle);
+            //dc.DrawRectangle(new SolidColorBrush(Color.FromArgb(100, 0, 255, 0)), null, new Rect(targetGridPosX * Map.Instance.tileWidth, targetGridPosY * Map.Instance.tileHeight, Map.Instance.tileWidth, Map.Instance.tileHeight));
+            //dc.DrawRectangle(new SolidColorBrush(Color.FromArgb(100, 0, 255, 255)), null, new Rect(curGridPosX * Map.Instance.tileWidth, curGridPosY * Map.Instance.tileHeight, Map.Instance.tileWidth, Map.Instance.tileHeight));
         }
 
         private void GenerateRandomInk()

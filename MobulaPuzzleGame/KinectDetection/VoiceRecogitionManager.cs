@@ -115,12 +115,14 @@ namespace MobulaPuzzleGame
         {
             GrammarBuilder grammarBuilder = new GrammarBuilder();
             grammarBuilder.Append("start");
+            grammarBuilder.Append("the game");
             // the same culture as the recognizer (US English)
             grammarBuilder.Culture = kinectRecognizerInfo.Culture;
             Grammar grammar = new Grammar(grammarBuilder);
 
             GrammarBuilder grammarBuilder2 = new GrammarBuilder();
             grammarBuilder2.Append("next");
+            grammarBuilder2.Append("level");
             // the same culture as the recognizer (US English)
             grammarBuilder2.Culture = kinectRecognizerInfo.Culture;
             Grammar grammar2 = new Grammar(grammarBuilder2);
@@ -129,7 +131,8 @@ namespace MobulaPuzzleGame
 
             GrammarBuilder grammarBuilder3 = new GrammarBuilder();
 
-            grammarBuilder3.Append("retry");
+            grammarBuilder3.Append("replay");
+            grammarBuilder3.Append("this level");
 
             // the same culture as the recognizer (US English)
             grammarBuilder3.Culture = kinectRecognizerInfo.Culture;
